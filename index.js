@@ -9,28 +9,28 @@ let canadaBigMackPrice = 6.77
 let israelBigMackPrice = 17.00
 
 
-let switzerlandIndex = (bigMackBasePrice / switzerlandBigMackPrice) 
-let swedenIndex =  (bigMackBasePrice /  swedenBigMackPrice) 
-let norwayIndex =  (bigMackBasePrice / norwayBigMackPrice) 
-let canadaIndex =  (bigMackBasePrice /  canadaBigMackPrice) 
-let israerIndex =  (bigMackBasePrice / israelBigMackPrice) 
+let switzerlandIndex = switzerlandBigMackPrice / bigMackBasePrice  
+let swedenIndex =  swedenBigMackPrice / bigMackBasePrice  
+let norwayIndex =   norwayBigMackPrice / bigMackBasePrice 
+let canadaIndex =  canadaBigMackPrice / bigMackBasePrice  
+let israerIndex =  israelBigMackPrice/  bigMackBasePrice
 
 
-let switzerlandExchangeRate = (1.08 - switzerlandIndex ) / switzerlandIndex * 100
-let sweedenExchangeRate = (0.11 - swedenIndex) / swedenIndex *100
-let norwayExchangeRate = (0.12 - norwayIndex ) / norwayIndex *100
-let canadaExchangeRate = (0.80 - canadaIndex )/ canadaIndex * 100
-let israelExchangeRate = (0.32 -  israerIndex) / israerIndex *100
+let switzerlandExchangeRate = (0.92- switzerlandIndex ) / switzerlandIndex * 100
+let sweedenExchangeRate = (8.72 - swedenIndex) / swedenIndex *100
+let norwayExchangeRate = (9.04 - norwayIndex ) / norwayIndex *100
+let canadaExchangeRate = (1.25- canadaIndex )/ canadaIndex * 100
+let israelExchangeRate = (3.29 -  israerIndex) / israerIndex *100
 
 
 
 
-console.log('USA -> ' + bigMackText + usBigMackPrice)
-console.log('Switzerland -> ' + bigMackText +  switzerlandBigMackPrice + ' and the index  is: ' + switzerlandExchangeRate.toFixed(0) )
-console.log('Sweden -> ' + bigMackText + swedenBigMackPrice + ' and the index  is: ' + sweedenExchangeRate.toFixed(0))
-console.log('Norway -> ' + bigMackText + norwayBigMackPrice + ' and the index  is:   ' + norwayExchangeRate.toFixed(0))
-console.log('Canada  -> ' + bigMackText + canadaBigMackPrice + ' and the index is:  ' + canadaExchangeRate.toFixed(0))
-console.log('Israel  -> ' + bigMackText + israelBigMackPrice + ' and the index is: ILS ' + israelExchangeRate.toFixed(0))
+console.log('USA -> ' + bigMackText + " US$" + usBigMackPrice)
+console.log('Switzerland -> ' + bigMackText + " SFR" +  switzerlandBigMackPrice + ' and the index  is: ' + switzerlandExchangeRate.toFixed(0) )
+console.log('Sweden -> ' + bigMackText + " SKR" + swedenBigMackPrice + ' and the index  is: ' + sweedenExchangeRate.toFixed(0))
+console.log('Norway -> ' + bigMackText + " NKR" + norwayBigMackPrice + ' and the index  is:   ' + norwayExchangeRate.toFixed(0))
+console.log('Canada  -> ' + bigMackText + " CAD" + canadaBigMackPrice + ' and the index is:  ' + canadaExchangeRate.toFixed(0))
+console.log('Israel  -> ' + bigMackText + " ILS" +  israelBigMackPrice + ' and the index is: ' + israelExchangeRate.toFixed(0))
 
 
 
