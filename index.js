@@ -3,8 +3,8 @@ const bigMackText = 'Price of Big Mack is: '
 let bigMackBasePrice = 5.66
 let usBigMackPrice = bigMackBasePrice
 let switzerlandBigMackPrice = 6.50
-let swedenBigMackPrice = 52.88
-let norwayBigMackPrice = 52.00
+let swedenBigMackPrice = 54.00
+let norwayBigMackPrice = 57.00
 let canadaBigMackPrice = 6.77
 let israelBigMackPrice = 17.00
 
